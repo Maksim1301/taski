@@ -66,6 +66,7 @@ jobs:
 
   # Собрать и отправить образ приложения на Docker Hub
   build_and_push_to_docker_hub:
+    name: Push Docker image to DockerHub
     runs-on: ubuntu-latest
     needs: tests  # Не выполнять сразу, ждать, пока выполнится tests
     steps:
