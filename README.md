@@ -44,7 +44,7 @@ docker compose -f docker-compose.production.yml exec backend python manage.py co
 
 docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /backend_static/static/
 ```
-Настройка Nginx:
+Проект настроен на работу на 8000 порту поэтому необходимо изменить конфиг Nginx:
 ```python
 nano /etc/nginx/sites-enabled/default
 ```
