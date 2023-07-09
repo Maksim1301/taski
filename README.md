@@ -3,7 +3,7 @@
 ## Учебный проект - Яндекс.Практика - Taski
 Taski - Приложение для планирования своих задач.
 
-###Установка
+## **Установка**
 Клонируем репозиторий:
 ```python
 git@github.com:Maksim1301/taski.git
@@ -20,7 +20,7 @@ POSTGRES_DB=django
 DB_HOST=db
 DB_PORT=5432
 ```
-### Деплой на сервере
+#### Деплой на сервере
 Подключитесь к удаленному серверу
 
 ```python
@@ -44,7 +44,7 @@ docker compose -f docker-compose.production.yml exec backend python manage.py co
 
 docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /backend_static/static/
 ```
-Проект настроен на работу на 8000 порту поэтому необходимо изменить конфиг Nginx:
+#### Настройка Nginx:
 ```python
 nano /etc/nginx/sites-enabled/default
 ```
